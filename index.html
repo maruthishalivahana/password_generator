@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Maven+Pro:wght@400..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="big-container">
+        <div class="title">
+            <p class="pass">Generate password</p>
+
+        </div>
+        <div class="input">
+            <label for="text">Generated password </label>
+            <span class="text"></span>
+            <span style="color: aliceblue;" id="result" class="maruthi"></span>
+        </div>
+        <div class="range">
+            <label for="range">Character length</label>
+            <span class="span-range"> <input type="range" id="input" min="1" max="20" value="10"
+                    class="range-input"></span>
+        </div>
+        <div class="settings">
+            <div class="upper-container">
+                <div class="uppercase-letters">
+                    <p> Include uppercase letters</p>
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" class="input-check" id="uppercase">
+                    <span class=" slider"></span>
+                </label>
+            </div>
+            <div class="upper-container">
+                <div class="uppercase-letters">
+                    <p> Include lowercase letters</p>
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" class="input-check" id="lowercase">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="upper-container">
+                <div class="uppercase-letters">
+                    <p> Include numbers</p>
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" class="input-check" id="numbers">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="upper-container">
+                <div class="uppercase-letters">
+                    <p> Include symbols</p>
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" class="input-check" id="symbols">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <button id="btn">Generate password</button>
+
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
